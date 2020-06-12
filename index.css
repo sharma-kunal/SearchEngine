@@ -1,0 +1,136 @@
+/* .body {
+  background-color: #000000;
+} */
+.heading {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+}
+
+input {
+  height: 40px;
+  width: 80%;
+  border-radius: 30px;
+}
+
+button {
+  height: 40px;
+  width: 18%;
+}
+
+@media only screen and (max-width: 400px) {
+    button {
+        height: 40px;
+        width: 100px;
+    }
+}
+
+/* button {
+  width: 15%;
+  height: 30px;
+  margin-left: 50px;
+} */
+
+.buttons {
+  text-align: center;
+}
+
+#suggestions {
+  height: 300px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+#error {
+  visibility: hidden;
+}
+
+.row {
+  padding-left: 20px;
+  height: 90px;
+}
+
+.row:hover {
+  background: #D3D3D3;
+}
+
+img {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+@media only screen and (max-width: 500px) {
+    img {
+      padding-top: 5px;
+      padding-left: 5px;
+      width: 60px;
+      height: 70px;
+    }
+
+    .movie_name {
+    display: inline-block;
+      font-weight: bold;
+      font-size: 10px;
+      margin-left: 10px !important;
+      width: 100%;
+      height: 15px;
+      padding: 0px;
+      overflow: hidden;
+    }
+
+    .year {
+  width: 100%;
+  height: 10px;
+  margin-left: 70px !important;
+}
+
+.type {
+  height: 20px;
+  width: 100%;
+  margin-left: 70px !important;
+  padding-top: 5px;
+}
+}
+
+.movie_name {
+  font-weight: bold;
+  font-size: 20px;
+  width: 70%;
+  height: 30px;
+  margin-left: 30px;
+  padding-top: 0px;
+}
+
+.year {
+  width: 70%;
+  height: 30px;
+  margin-left: 100px;
+  margin-top: -40px;
+}
+
+.type {
+  height: 30px;
+  width: 70%;
+  margin-left: 100px;
+  margin-top: -25px;
+}
+
+.id {
+  visibility: hidden;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
