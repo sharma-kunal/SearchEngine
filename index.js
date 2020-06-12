@@ -31,7 +31,7 @@ input.addEventListener('keyup', function(e) {
 })
 
 function search(value) {
-  url = "http://kunalsharma01.herokuapp.com/api/movie/?name=" + value;
+  url = "https://kunalsharma01.herokuapp.com/api/movie/?name=" + value;
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4) {
@@ -130,7 +130,7 @@ function callbackFunc(response) {
       // console.log(name[1].innerHTML);
       // input.value = name[0].innerHTML;
       // window.scrollTo(0,0);
-      window.location.href = "http://kunalsharma01.herokuapp.com/movie?id=" + name[0].getAttribute('id') + "&year=" + name[1].innerHTML + "&type=" + (name[2].innerHTML).toLowerCase();
+      window.location.href = "https://kunalsharma01.herokuapp.com/movie?id=" + name[0].getAttribute('id') + "&year=" + name[1].innerHTML + "&type=" + (name[2].innerHTML).toLowerCase();
     });
     div.appendChild(div2);
   }
