@@ -130,7 +130,7 @@ function callbackFunc(response) {
       // console.log(name[1].innerHTML);
       // input.value = name[0].innerHTML;
       // window.scrollTo(0,0);
-      window.location.href = "https://kunalsharma01.herokuapp.com/movie?id=" + name[0].getAttribute('id') + "&year=" + name[1].innerHTML + "&type=" + (name[2].innerHTML).toLowerCase();
+      window.location.href = "https://kunalsharma01.herokuapp.com/movie?id=" + name[0].getAttribute('id') + "&year=" + name[1].innerHTML + "&type=" + (name[2].innerHTML).toLowerCase() + "&wid=" + window.screen.width;
     });
     div.appendChild(div2);
   }
