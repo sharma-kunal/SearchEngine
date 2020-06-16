@@ -54,6 +54,14 @@ button {
   visibility: hidden;
 }
 
+#loading {
+  min-height: 200px;
+  min-width: 200px;
+  display: block;
+  margin: auto;
+  visibility: hidden;
+}
+
 .row {
   padding-left: 20px;
   height: 90px;

@@ -17,6 +17,7 @@ let input = document.getElementById('tableSearch');
 let suggestionsBox = document.getElementById('suggestions');
 let timeout = null;
 
+
 input.addEventListener('keyup', function(e) {
   clearTimeout(timeout);
   timeout = setTimeout(function() {
@@ -25,6 +26,8 @@ input.addEventListener('keyup', function(e) {
       document.getElementById('suggestions').innerHTML = "";
       unhideButtons();
     } else {
+          hideButtons();
+          showLoading();
           search(input.value);
     }
   }, 1000);
@@ -37,18 +40,27 @@ function search(value) {
     if (this.readyState == 4) {
       suggestionsBox.style.display = "block";
       if (this.status == 200) {
+        hideLoading();
         var jsonData = JSON.parse(xhttp.responseText);
         callbackFunc(jsonData);
-        hideButtons();
-        handleClick();
       } else {
-        // handle error
+        hideLoading();
         error();
       }
     }
   };
   xhttp.open("GET", url, true);
   xhttp.send();
+}
+
+function showLoading() {
+  document.getElementById('loading').style.display = "block";
+  document.getElementById('loading').style.visibility = "visible";
+}
+
+function hideLoading() {
+  document.getElementById('loading').style.visibility = "hidden";
+  document.getElementById('loading').style.display = "none";
 }
 
 function handleClick() {
